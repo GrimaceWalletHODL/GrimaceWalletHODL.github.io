@@ -2,7 +2,7 @@
   --color-primary: #a684ff;
   --color-primary-hover: #af93f8;
   --color-bg: #0F051D;
-  --color-blocks-bg: #d8faff;
+  --color-blocks-bg: rgb(255 255 255 / 5%);
   --color-text-1: #fff;
   --color-text-1-2: #8996a3;
   --color-text-2: #000;
