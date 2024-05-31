@@ -27,22 +27,44 @@
     font-style:normal;
     font-display:swap
 }
-    @font-face{font-family:Inter;src:url(/assets/Inter-Regular-ed64c5d8.woff2) format("woff2"),url(/assets/Inter-Regular-6ab20422.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Inter;src:url(/assets/Inter-SemiBold-d6d09054.woff2) format("woff2"),url(/assets/Inter-SemiBold-492190c4.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}body{min-height:100vh;color:var(--color-text-1);background:var(--color-bg);font-family:Inter;font-size:15px;line-height:150%;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[contenteditable=true]{outline:none}[contenteditable=true]:empty:before{content:attr(placeholder);color:var(--color-placeholder)}[contenteditable=true] br{display:none}input::placeholder{color:var(--color-placeholder)!important;opacity:1}a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:1px}.pu-skeleton{display:block!important}
-    @media (max-width: 1000px){.hide-on-mobile{display:none}}
-    .header{display:grid;grid-template-columns:1fr 1fr;background:var(--color-header);padding:0 16px}
-    @media (min-width: 1000px){
-    .header{grid-template-columns:1fr var(--content-max-width) 1fr}}
-    .header--tma{grid-template-columns:auto auto}
-    .header__logo{width:auto;height:24px;margin:8px 0;display:inline-block}
-    .header__logo svg{display:block}
-    .header__logo__container{order:0;align-self:center;display:flex}
-    .header--tma .header__logo__container{display:none}
-    .header__connect-wallet{margin:8px 0 8px auto}
-    .header__connect-wallet__container{order:2;align-self:center}
-    .header__nav{order:3;flex:1;display:flex;gap:24px;width:100%;grid-column:-1/1}
-    @media (min-width: 1000px){
-      .header__nav{order:1;grid-column:unset}}
-      .header__nav__item{color:var(--color-text-1-2);font-weight:600;font-size:15px;padding:4px 0 12px;text-decoration:none;position:relative;display:flex;align-items:center}
+    @font-face{
+      font-family:Inter;src:url(/assets/Inter-Regular-ed64c5d8.woff2) format("woff2"),url(/assets/Inter-Regular-6ab20422.woff) format("woff");
+      font-weight:400;
+      font-style:normal;
+      font-display:swap
+    }
+    @font-face{
+      font-family:Inter;src:url(/assets/Inter-SemiBold-d6d09054.woff2) format("woff2"),url(/assets/Inter-SemiBold-492190c4.woff) format("woff");
+      font-weight:600;
+      font-style:normal;
+      font-display:swap
+    }
+    body{
+      min-height:100vh;color:var(--color-text-1);background:var(--color-bg);font-family:Inter;font-size:15px;line-height:150%;text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale
+    }
+    [contenteditable=true]{
+      outline:none
+    }
+    [contenteditable=true]:empty:before{
+      content:attr(placeholder);
+      color:var(--color-placeholder)
+    }
+  [contenteditable=true] br{
+    display:none
+  }
+  input::placeholder{
+    color:var(--color-placeholder)!important;opacity:1
+  }
+  a{
+    color:inherit;
+    text-underline-offset:.2em;
+    text-decoration-thickness:1px
+  }
+  .pu-skeleton{
+    display:block!important
+  }
+    @media (max-width: 1000px){.hide-on-mobile{display:none}
     @media (min-width: 1000px){
       .header__nav__item{padding:0}}
       .header__nav__item.router-link-active{color:var(--color-text-1)}
