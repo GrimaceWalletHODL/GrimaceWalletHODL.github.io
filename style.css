@@ -27,22 +27,27 @@
     font-style:normal;
     font-display:swap
 }
-    @font-face{
+@font-face{
       font-family:Inter;src:url(/assets/Inter-Regular-ed64c5d8.woff2) format("woff2"),url(/assets/Inter-Regular-6ab20422.woff) format("woff");
       font-weight:400;
       font-style:normal;
       font-display:swap
-    }
-    @font-face{
+}
+@font-face{
       font-family:Inter;src:url(/assets/Inter-SemiBold-d6d09054.woff2) format("woff2"),url(/assets/Inter-SemiBold-492190c4.woff) format("woff");
       font-weight:600;
       font-style:normal;
       font-display:swap
-    }
-    body{
+}
+.gradient-position img {
+    position: fixed;
+    -webkit-filter: blur(80px);
+    filter: blur(80px);
+}
+body{
       min-height:100vh;color:var(--color-text-1);background:var(--color-bg);font-family:Inter;font-size:15px;line-height:150%;text-rendering:optimizeLegibility;
       -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale
-    }
+}
     [contenteditable=true]{
       outline:none
     }
