@@ -39,10 +39,20 @@
       font-style:normal;
       font-display:swap
 }
+.gradient-position img {
+  position: fixed;
+  -webkit-filter: blur(80px);
+  filter: blur(80px);
+}
+
 .gradient-position {
-    position: fixed;
-    -webkit-filter: blur(80px);
-    filter: blur(80px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  mix-blend-mode: overlay;
+  z-index: -1;
 }
 body{
       min-height:100vh;color:var(--color-text-1);background:var(--color-bg);font-family:Inter;font-size:15px;line-height:150%;text-rendering:optimizeLegibility;
