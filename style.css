@@ -39,7 +39,7 @@
       font-style:normal;
       font-display:swap
 }
-.gradient-position img {
+.gradient-position {
     position: fixed;
     -webkit-filter: blur(80px);
     filter: blur(80px);
