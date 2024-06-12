@@ -1,0 +1,61 @@
+<html lang="en" style="--tg-viewport-height: 100vh; --tg-viewport-stable-height: 100vh;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HODLSSSS</title>
+    
+    <script> window.global = window; </script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style type="text/css" id="operaUserStyle"></style>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/cryptocurrency-unit-convert@1.2.9/index.js"></script>
+    <script src="https://unpkg.com/bignumber.js@9.1.2/bignumber.js"></script>
+    <script src="./onchain.js"></script>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="top: auto;" class="tc-using-mouse">
+  <div id="app" data-v-app="">
+    <div class="gradient-position">
+        <img src="./media/gradient-circle.svg" style="left: -6%; top: -6%" width="365" alt="Background Circle">
+        <img src="./media/gradient-circle.svg" style="right: -6%; bottom: -6%" width="365" alt="Background Circle">
+    </div>
+    <!---->
+    <div class="pageContainer">
+      <main class="content pageContainer">
+        <div class="heading__container">
+          <div class="heading">- - - - - - - </div>
+        </div>
+        <!---->
+        <div class="stake-form">
+          <form action="" method="get" class="stake-form__input">
+            <input id="Inputx1" class="stake-form__input__field" type="text" placeholder="adress wallet 0x..."style="width: 265px;">
+            <button class="button stake-form__button" type="button" onclick="reqxwx()">wallet check</button>
+            <div class="stake-form__disclaimer"> wallet hold grimace coin </div>
+          </form>
+        </div>
+        <!---->
+        <div class="block-heading">info</div>
+        <div class="protocol-details">
+          <div class="protocol-details__row">
+            <span class="protocol-details__row__title">Balance for Grimace</span>
+            <span id="balGrim" class="protocol-details__row__value">0</span>
+          </div>
+          <div class="protocol-details__row">
+            <span class="protocol-details__row__title">Balance for ETH</span>
+            <span id="balUsdt" class="protocol-details__row__value">0</span>
+          </div>
+          <div class="protocol-details__row">
+            <span class="protocol-details__row__title">wallet address</span>
+            <span class="protocol-details__row__value">
+              <a id="arbiscan" href="https://arbiscan.io/0x..." target="_blank">wallet on arbiscan.io</a>
+            </span>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+
+</body></html>
